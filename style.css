@@ -3,6 +3,9 @@
     padding:0%;
     font-family: 'Roboto', sans-serif;
 }
+#workSec{
+    display: block;
+}
 body{
     background-color: #eee;
 }
@@ -79,6 +82,19 @@ ul li i:hover{
     color: burlywood;
 
 }
+
+.work-container{
+    display: flex;
+    justify-content: center;
+}
+
+.work{
+    display: inline;
+}
+
+.card{
+    display: flex;
+}
 .head .crd{
     width:300px;
     height:500px;
@@ -100,6 +116,7 @@ ul li i:hover{
     background-color: #eee;
     padding:7px ;
     box-shadow: 0px 2px 2px 2px rgb(181, 179, 179);
+    margin-top: 20px;
 }
 .footer .footerText{
     margin-inline: 72px;
@@ -107,4 +124,63 @@ ul li i:hover{
 .footerText p{
     margin-top: 22px;
 }
+.blog{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    margin-inline: 22px;
+    padding: 22px;
+    border-radius: 50px;
+   
 
+}
+
+.blogText{
+    padding: 2px;
+    margin-top: 10px;
+}
+.blogText a{
+    width: 12px;   
+    height: 8px;
+    padding: 2px;
+    background-color: burlywood;
+    color:white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top:2px;
+    position:relative;
+    top:3px;
+}
+.blog img{
+    width: 85%;
+    padding: 12px;
+}
+ .about{
+    display: none;
+} 
+.aboutUs{
+    background-color: brown;
+    color: white;
+    padding: 55px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.me{
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    background-color: #fff;
+    padding: 40px;
+    margin-left:20%;
+}
+.me img{
+    width: 34%;
+}
+.me aboutText{
+    padding: 25px;
+    margin-left: 10%;
+   
+}
