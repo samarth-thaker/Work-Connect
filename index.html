@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Connect</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,165 +20,213 @@
             </div>
             <ul>
                 <li>
-                    <a id="Home">Home</a>
-                    <a id="Explore" onclick="Explore()">Explore</a>
-                    <a id="AboutUs" onclick="AboutUs()">About us</a>
-                    <a id="Blogs" onclick="Blogs()">Blog</a>
-                    <a id="Contact" href="C:\Samarth Thaker\WorkcConnect\account\index.html">Contact us</a>
+                    <a id="home" onclick="homes()">Home</a>
+                    <a id="explore" onclick="explore()">Explore</a>
+                    <a id="blog" onclick="blogs()">Blog</a>
+                    <a id="about" onclick="abouts()">About</a>
+                    <a id="contact" onclick="contacts()">Contact</a>
+                    
+
                 </li>
             </ul>
         </nav>
-        <!---Main page-->
+
+        <!-- mainpage -->
+
         <div class="main">
             <div class="mainText">
                 <h2>Work Connect</h2>
-                <h1>Find the right worker</h1>
+                <h1 class="top">Find the right worker</h1>
                 <h1>right away</h1>
-                <p></p>
                 <button>Explore</button>
             </div>
-
+            <!-- <img src="m3.png" alt=""> -->
         </div>
-        <!---Cards-->
-        <div class="work">
+
+        <!-- Carpenters -->
+
+        <div class="trend">
             <div class="head">
                 <h1><span>Carpenters</span></h1>
             </div>
             <div class="card">
-                <div class="crd">
-                    <img src="C:\Samarth Thaker\WorkcConnect\images\crp1.jpg">
-                    <h2>Ramesh Kumar</h2>
-                    <button>Contact now</button>
-                </div>
-                <div class="crd">
-                    <img src="C:\Samarth Thaker\WorkcConnect\images\crp2.jpg">
-                    <h2>Sonu</h2>
-                    <button>Contact now</button>
-                </div>
+                
 
-
-            </div>
-            <div class="work" id="workSec">
-                <div class="head">
-                    <h1><span>Farm labourers</span></h1>
-                </div>
-                <div class="card">
-                    <div class="crd">
-                        <img src="C:\Samarth Thaker\WorkcConnect\images\fL1.jpg">
-                        <h2>Sushma</h2>
-                        <button>Contact now</button>
+                 <div class="crd">
+                    <img src="C:\Samarth Thaker\WorkcConnect\images\crp1.jpg" alt="" onclick="show(this)"> 
+                    <div class="crdText">
+                        <h2>Ramesh Kumar</h2>
+                       
+                        <button>Connect</button>
                     </div>
+                 </div>
                     <div class="crd">
-                        <img src="C:\Samarth Thaker\WorkcConnect\images\fL2.jpg">
-                        <h2>Chandresh</h2>
-                        <button>Contact now</button>
-                    </div>
-
-
-                </div>
-
-
-
-            </div>
-            <!---Blog-->
-            <div class="head">
-                <h1>Work Connect</h1>
-            </div>
-            <div class="work-container">
-                <div class="work">
-                    <div class="card">
-                        <div class="blog">
-
-                            <div class="blogText">
-                                <h2>Carpenters</h2>
-                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, ipsum?</p>
-                                <a
-                                    href="https://www.123helpme.com/essay/Essay-On-Carpentry-774230#:~:text=Carpenters%20saw%2Cshape%2C%20and%20fasten,required%20and%20set%20for%20carpenters.">Read
-                                    more</a>
-
-                            </div>
+                         <img src="C:\Samarth Thaker\WorkcConnect\images\crp2.jpg" alt="" onclick="show(this)"> 
+                        <div class="crdText">
+                            <h2>Kiran Seth</h2>
+                           
+                            <button>Connect</button>
                         </div>
                     </div>
                 </div>
-                <div class="work">
+            </div>
+
+                <!-- Farm Labourers -->
+
+                <div class="trend" id="trendSec">
+                    <div class="head">
+                        <h1><span>Farm Labourers</span></h1>
+                    </div>
+                    <div class="card">
+                        <div class="crd">
+                             <img src="C:\Samarth Thaker\WorkcConnect\images\fL1.jpg" alt="" onclick="show(this)"> 
+                            <div class="crdText">
+                                <h2>Sushila Devi</h2>
+                            
+                            <button>Connect</button>
+                            </div>
+                        </div>
+
+                        <div class="crd">
+                             <img src="C:\Samarth Thaker\WorkcConnect\images\fL2.jpg" alt="" onclick="show(this)"> 
+                            <div class="crdText">
+                                <h2>Prakash Bhai</h2>
+                            
+                            <button>Connect</button>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+
+
+                <!-- about us -->
+
+                <div class="about">
+
+                    <div class="aboutus">
+                        <h1>#KnowUs</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="me">
+                        <img src="C:\Samarth Thaker\WorkcConnect\images\pexels-karsten-madsen-18105.jpg" alt=""> 
+                        <div class="aboutText">
+                            <h1>Who we are ?</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos sit amet consectetur adipisicing Dolorum corrupti consequuntur sunt ipsam aperiam vel magni sequi eos atque nam maxime dolorem fuga, rem eum iure quidem! Illo corporis, asperiores ipsum excepturi voluptates necessitatibus consectetur odit omnis hic praesentium autem, officiis dignissimos assumenda saepe.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact -->
+
+                <div class="contact">
+
+                    <div class="contactus">
+                        <h1>#Let's Connect</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="contactMe">
+                        <div class="contactText">
+                            <h1>Visit Our Office or Contact <br>
+                                Us Today</h1>
+                            <p>Address : Dablin Park, England, New york.</p>
+                            <p>Contact : support@work-connect.com</p>
+                            <p>Number : +91 67890 12345</p>
+                        </div>
+                       <!--  <img src="map.PNG" alt=""> -->
+                    </div>
+
+                    <div class="form">
+                        <h1>Connect with Us. Fill Form</h1>
+                        <input type="text" placeholder="Enter Email"> <br>
+                       
+                        <button>Submit</button>
+
+                    </div>
+                </div>
+                 <!-- cart -->
+
+                 <div class="cart">
+                   <!--  <img id="newImg" src="" alt=""> -->
+                    <div class="cartText">
+                        <h1>Trends Offer : Trending Shop <br>
+                            Now</h1>
+                            <h2>Special Price</h2>
+                            <h2>$11</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                           <div class="btn">
+                            <button>Buy Now</button>
+                            <button onclick="addCart()">Add to Cart</button>
+                           </div>
+                           <button  class="back">Back</button>
+
+
+
+                    </div>
+                 </div>
+
+                <!-- blogs -->
+                <div class="trends">
+                    <div class="head">
+                        <h1><span>Know more</span></h1>
+                    </div>
                     <div class="card">
                         <div class="blog">
+                          
+                            <div class="blogText">
+                                <h2>Carpentery</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
+                                <a href="https://www.123helpme.com/essay/Essay-On-Carpentry-774230#:~:text=Carpenters%20saw%2Cshape%2C%20and%20fasten,required%20and%20set%20for%20carpenters.">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="blog">
+                           
                             <div class="blogText">
                                 <h2>Farm Labourers</h2>
-                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, ipsum?</p>
-                                <a
-                                    href="https://unacademy.com/content/bank-exam/study-material/general-awareness/agricultural-labourer/">Read
-                                    more</a>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
+                                <a href="https://unacademy.com/content/bank-exam/study-material/general-awareness/agricultural-labourer/">Read More</a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+
+                <div class="footer">
+                   
+                    <div class="footerText">
+                        <h2>About US</h2>
+                        <p>Adrress : Lorem ipsum dolor sit amet, <br>
+                            consectetur adipisicing <br>
+                            Perferendis, excepturi alias.</p>
+                        <p>Service</p>
+                        
 
                     </div>
+                    <div class="footerText">
+                        <h2>Contact</h2>
+                        <p>91 67890 12345</p>
+                        <p>Customer</p>
+                        <p>Comming up</p>
+                        
 
+                    </div>
+                    <div class="footerText">
+                        <h2>Trending</h2>
+                        <p>Service</p>
+                        <p>Customer satisfaction</p>
+                        <p>Worker satisfaction</p>
+                        <p></p>
+
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-    <!--About-->
-    <div class="about" id="about">
-        <div class="aboutUs">
-            <h1>#Know us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, quas neque iure nulla sapiente modi?</p>
-        </div>
-        <div class="me">
-            <img src="C:\Samarth Thaker\WorkcConnect\images\pexels-karsten-madsen-18105.jpg">
-            <div class="aboutText">
-                <h1>Who we are?</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam iste inventore quis ad iure
-                    fugit, dolorem enim consectetur, animi incidunt, magni voluptate beatae quasi et impedit maiores.
-                    Perspiciatis nulla ipsum soluta natus? Nihil nesciunt dignissimos suscipit modi, atque sit nisi
-                    at dolores veniam tempore, omnis recusandae ipsum officiis neque aperiam. Laudantium aliquid nihil
-                    quia
-                    dignissimos, asperiores minus nisi itaque consequuntur, modi voluptates accusamus dolorem, quo totam
-                    atque.
-                    Harum, laboriosam minus. Illum sequi rerum magnam vel voluptas debitis, deleniti, labore nobis autem
-                    soluta
-                    reiciendis eum dolor molestias fugiat. Quis odit magni, ducimus recusandae soluta perferendis
-                    accusamus tempore? Quae autem sequi ullam?
-                </p>
-            </div>
-        </div>
-    </div>
-    <!--Footer-->
-    <div class="footer">
-        <div class="footerText">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
-        <div class="footerText">
-            <h2>Work Connect</h2>
-            <ul>
-                <p>Services</p>
-                <p>Worker Satisfaction</p>
-                <p>Employer Satisfaction</p>
-            </ul>
-        </div>
-        <div class="footerText">
-            <h2>About us</h2>
-            <p>Address</p>
-
-        </div>
-        <div class="footerText">
-            <h2>Contact</h2>
-            <ul>
-                <p>+91 45678 90123</p>
-                <p>support@workconnect.com</p>
-            </ul>
-
-
-        </div>
-    </div>
-    </div>
-    <script src="app.js"></script>
-    
+            <script src="app.js"></script>
 </body>
 
 </html>
