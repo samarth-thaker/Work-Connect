@@ -94,7 +94,9 @@ ul li i:hover{
 
 .card{
     display: flex;
+   
 }
+
 .head .crd{
     width:300px;
     height:500px;
@@ -103,12 +105,14 @@ ul li i:hover{
     padding: 22px;
 }
 .crd img{
-    width: 25%;
-    height:25%;
-    border-radius:21px;
+    width: 300px;
+    height: 500px;
+    border-radius:20px;
 }
 .crd text{
-    
+    font-size: 1000px;
+    color: bisque;
+
 }
 .footer{
     display: flex;
